@@ -3,7 +3,7 @@ function haversine(lat1, lat2, lon1, lon2) {
     let dLat = (lat2 - lat1);
     let dLon = (lon2 - lon1);
     lat1 = lat1.toRad();
-    lat2 = lat.toRad();
+    lat2 = lat.toRad();//test
 
     let a = Math.sin(dLat/2) * Math.sine(dLat/2) + Math.sine(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2);
     let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
