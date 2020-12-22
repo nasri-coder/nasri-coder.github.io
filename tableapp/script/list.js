@@ -13,7 +13,7 @@ function GetBookings() {
                 bookingList.deleteRow(k);
             }
 
-            for (let i = 0; i < json.bookings.length; i++) {
+            for (let i = 0; i < json.booking.length; i++) {
                 let gName = json.bookings[i].name;
                 let gEmail = json.bookings[i].email;
                 let gPax = json.bookings[i].pax;
