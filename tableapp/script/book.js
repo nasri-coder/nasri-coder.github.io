@@ -17,11 +17,12 @@ function BookNow(guestName, guestEmail, guestPax, guestRemarks, guestDate, guest
             "Content-Type": "application/json"
         }
     })
-    .then((response) => response.json())
-    .then(json => {
-        alert(json.booking.name + " added!");
-    });
+        .then((response) => response.json())
+        .then(json => {
+            alert(json.booking.name + " added!");
+        });
 }
+
 
 window.addEventListener("load", function () {
     document.getElementById("bookNow").addEventListener("click", function () {
