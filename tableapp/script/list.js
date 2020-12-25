@@ -28,10 +28,10 @@ function GetBookings() {
                 row.insertCell(1).innerHTML = gName;
                 row.insertCell(2).innerHTML = gEmail;
                 row.insertCell(3).innerHTML = gPax;
-                row.insertCell(3).innerHTML = gTime;
-                row.insertCell(3).innerHTML = gDate;
-                row.insertCell(4).innerHTML = gRemarks;
-                row.insertCell(5).innerHTML = "<button id='" +
+                row.insertCell(4).innerHTML = gTime;
+                row.insertCell(5).innerHTML = gDate;
+                row.insertCell(6).innerHTML = gRemarks;
+                row.insertCell(7).innerHTML = "<button id='" +
                     buttonId + "' class='btn btn-danger'>Delete</button>";
 
                 bookingIds.push(buttonId);
