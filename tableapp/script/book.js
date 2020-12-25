@@ -32,6 +32,6 @@ window.addEventListener("load", function () {
         let userDate = document.getElementById("userDate").value;
         let userTime = document.getElementById("userTime").value;
 
-        BookNow(userName, userEmail, userPax, userRemarks);
+        BookNow(userName, userEmail, userPax, userRemarks, userDate, userTime);
     });
 });
