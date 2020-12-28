@@ -13,14 +13,14 @@ function GetBookings() {
                 bookingList.deleteRow(k);
             }
 
-            for (let i = 0; i < json.booking.length; i++) {
-                let gName = json.booking[i].name;
-                let gEmail = json.booking[i].email;
-                let gPax = json.booking[i].pax;
-                let gTime = json.booking[i].time;
-                let gDate = json.booking[i].date;
-                let gId = json.booking[i].id;
-                let gRemarks = json.booking[i].remark;
+            for (let i = 0; i < json.bookings.length; i++) {
+                let gName = json.bookings[i].name;
+                let gEmail = json.bookings[i].email;
+                let gPax = json.bookings[i].pax;
+                let gTime = json.bookings[i].time;
+                let gDate = json.bookings[i].date;
+                let gId = json.bookings[i].id;
+                let gRemarks = json.bookings[i].remark;
                 let buttonId = "delete" + gId;
 
                 let row = bookingList.insertRow(bookingList.rows.length);
