@@ -12,3 +12,8 @@ function initMap() {
       map: map,
     });
   }
+window.addEventListener("load", function () {
+    document.getElementById("btnLocate").addEventListener("click", function () {
+        initMap();
+    });
+})
