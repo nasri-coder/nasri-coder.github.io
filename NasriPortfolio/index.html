@@ -456,29 +456,6 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <script>
-            function submitData() {
-                const scriptURL = "https://script.google.com/macros/s/AKfycbweHDHJRuS4WJ62AwRzij_TG5VXDv86OHDvrqFCnYdRjDzXjLj3fzLJYVi8qcdgXdw1/exec"; // Replace with your Web App URL
-                const form = document.getElementById('dataForm');
-    
-                const data = {
-                    name: form.name.value,
-                    email: form.email.value,
-                    phone: form.phone.value,
-                    message: form.message.value
-                };
-    
-                fetch(scriptURL, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(data)
-                })
-                .then(response => response.text())
-                .then(result => alert("Data submitted successfully!"))
-                .catch(error => alert("Error: " + error));
-            }
-        </script>
+        <script src="script/contactform.js"></script>
     </body>
 </html>
