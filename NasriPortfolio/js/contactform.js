@@ -18,7 +18,7 @@ function sheet1(name, email, phone, message) {
     })
         .then((response) => response.json())
         .then(json => {
-            alert(json.sheet1 + " added!");
+            alert(json.sheet1.name + " added!");
         });
 }
 
