@@ -1,7 +1,7 @@
 function sheet1(name, email, phone, message) {
     let url = 'https://api.sheety.co/6bb7d5e4f5c607ab66603ebc27552f2c/sheet1/sheet1';
     let body = {
-        booking: {
+        sheet1: {
             name: name,
             email: email,
             phone: phone,
