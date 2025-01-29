@@ -30,6 +30,6 @@ window.addEventListener("load", function () {
         let phone = document.getElementById("phone").value;
         let message = document.getElementById("message").value;
 
-        sheet1(name, email, phone, message);
+        submitcont(name, email, phone, message);
     });
 });
