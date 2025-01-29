@@ -18,17 +18,17 @@ function sheet1(name, email, phone, message) {
     })
         .then((response) => response.json())
         .then(json => {
-            alert(json.booking.name + " added!");
+            alert(json.sheet1 + " added!");
         });
 }
 
 
 window.addEventListener("load", function () {
     document.getElementById("sheet1").addEventListener("click", function () {
-        let userName = document.getElementById("name").value;
-        let userEmail = document.getElementById("email").value;
-        let userPax = document.getElementById("phone").value;
-        let userRemarks = document.getElementById("message").value;
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+        let message = document.getElementById("message").value;
 
         sheet1(name, email, phone, message);
     });
