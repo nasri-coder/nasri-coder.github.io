@@ -24,7 +24,7 @@ function sheet1(name, email, phone, message) {
 
 
 window.addEventListener("load", function () {
-    document.getElementById("sheet1").addEventListener("click", function () {
+    document.getElementById("submit").addEventListener("click", function () {
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let phone = document.getElementById("phone").value;
